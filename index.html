@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Ice Cream Shoppe</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.typekit.net/ilp4scf.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <style>
+
+      #cone {
+        margin-top: 55vh;
+        margin-left: 35vw;
+        position: absolute;
+        z-index: auto;
+      }
+
+      #mint {
+        margin-top: 35vh;
+        margin-left: 39vw;
+        position: relative;
+        z-index: -1;
+        -webkit-animation: drop 1s;
+      }
+
+      #cookiedough {
+        margin-top: 14vh;
+        margin-bottom: -18vh;
+        margin-left: 41vw;
+        z-index: auto;
+        position: relative;
+        -webkit-animation: drop1 1s;
+        animation-delay: .1s;
+      }
+
+      #neopolitan {
+        margin-left: 41vw;
+        margin-top: 12vh;
+        z-index: -1;
+        position: relative;
+        -webkit-animation: drop1 1s;
+      }
+
+      #cone3 {
+        position: relative;
+      }
+
+      #vanilla {
+        position: absolute;
+        z-index: -2;
+        margin-top: 3vh;
+        margin-left: 43vw;
+        -webkit-animation: drop1 1s;
+        animation-delay: .2s;
+      }
+
+       #chocolate {
+        position: absolute;
+        margin-top: 35vh;
+        margin-left: 43vw;
+        z-index: -4;
+        -webkit-animation: drop1 1s;
+      }
+
+       #strawberry {
+        margin-top: 20vh;
+        position: absolute;
+        z-index: -3;
+        margin-left: 43vw;
+        -webkit-animation: drop1 1s;
+        animation-delay: .1s;
+      }
+
+
+@-webkit-keyframes drop1 {
+     0% {
+        transform: translate(0vw, -50vh);
+        animation-timing-function: ease-in;
+    }
+
+      100% {
+        transform: translate(0vw, 0vh);
+        animation-timing-function: ease-in;
+    }
+}
+
+@-webkit-keyframes drop {
+     0% {
+        transform: translate(0vw, -50vh);
+        animation-timing-function: ease-in;
+    }
+
+      100% {
+        transform: translate(0vw, 0vh);
+        animation-timing-function: ease-in;
+    }
+}
+
+
+body {
+        background-color: lightblue;
+      }
+      #cone1 {display: none;}
+      #cone2 {display: none;}
+      #cone3 {display: block;}
+
+      @media screen and (min-width: 750px) {
+        body {
+          background-color: #CEFFCE;
+        }
+        #cone1 {display: none;}
+        #cone2 {display: block;}
+        #cone3 {display: none;}
+      }
+
+      @media screen and (min-width: 1000px) {
+        body {
+          background-color: #FFE0FB;
+        }
+        #cone1 {display: block;}
+        #cone2 {display: none;}
+        #cone3 {display: none;}
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <div id="cone1">
+      <img id="cone" src="cone.png" height="300vh">
+      <img id="mint" class="spin" src="mint.png" height="200vh">
+    </div>
+
+    <div id="cone2">
+      <img id="cone" src="cone.png" height="300vh">
+      <img id="cookiedough" class="spin" src="cookie.png" height="200vh">
+      <img id="neopolitan" class="spin" src="neopolitan.png" height="200vh">
+    </div>
+
+    <div id="cone3">
+      <img id="cone" src="cone.png" height="300vh">
+      <img id="chocolate" class="spin" src="chocolate.png" height="200vh">
+      <img id="vanilla" class="spin" src="vanilla.png" height="200vh">
+      <img id="strawberry" class="spin" src="strawberry.png" height="200vh">
+    </div>
+
+
+
+  </body>
+  
+</html>
+
+
+
